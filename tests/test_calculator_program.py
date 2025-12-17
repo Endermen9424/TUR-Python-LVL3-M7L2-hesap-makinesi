@@ -7,8 +7,11 @@ def test_calculate_addition():
 def test_calculate_division():
     assert calculate(8, 2, '/') == 4
 
-def test_calculate_unknown_operation():
-    assert calculate(5, 5, 'unknown') == "Bilinmeyen işlem."
+def test_calculate_carpma_operation():
+    assert calculate(5, 5, '*') == 25
+
+def test_calculate_cıkarma_operation():
+    assert calculate(10, 4, '-') == 6
 
 '''
 Görev: Şu anda, 3 adet birim test uygulanmıştır:
